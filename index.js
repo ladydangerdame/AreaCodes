@@ -23,6 +23,6 @@ $("form").on("submit", function(event) {
   event.preventDefault();
   var value = $('input[name="num"]').val();
   areaCode(value);
-  $(".result").text(value + " belongs to " + code + "!").show();
+  $(".result").text("Area code " + value + " belongs to " + code + "!").show();
   this.reset();
 });
